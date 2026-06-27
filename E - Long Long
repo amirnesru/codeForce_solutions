@@ -1,0 +1,16 @@
+for i in range (int(input())):
+    n = int(input())
+    arr = list(map(int, input().split()))
+    fast = 0
+    count = 0
+    sum = 0
+    while fast < n :
+        if arr[fast] < 0 :
+            count+=1
+            while fast < n and arr[fast]<=0:
+                sum+=abs(arr[fast])
+                fast+=1
+        else :
+            sum += abs(arr[fast])
+            fast +=1      
+    print (sum, count)
