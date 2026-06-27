@@ -1,0 +1,17 @@
+for i in range(int(input())):
+    n = int(input())
+    s = input()
+    if "A" not in s:
+        print(0)
+        continue
+    left = s.index("A")
+    right = left+1                                           
+    count = 0
+    while right < n :
+        if s[right] != "B" :
+            right+=1
+        else :
+            count +=right - left
+            left = right
+            right +=1  
+    print (count)
