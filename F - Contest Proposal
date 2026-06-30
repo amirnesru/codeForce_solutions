@@ -1,0 +1,15 @@
+for i in range(int(input())):
+    n = int(input())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    slow = 0
+    fast = 0
+    count = 0
+    while fast < n :
+        if a[slow] <= b [fast]:
+            slow +=1
+            fast+=1
+        else:
+            count+=1
+            fast +=1
+    print(count)           
