@@ -1,6 +1,7 @@
 for _ in range(int(input())):
     n, m = map(int, input().split())
-   
+
+
     arr1 = [0] * m 
     arr2 = [0] * m
     
@@ -13,6 +14,5 @@ for _ in range(int(input())):
     matrix = [arr1, arr2, arr2, arr1]                 
     
     final_matrix = ((n // 4) * matrix) + matrix[:(n % 4)]
-    
     for row in final_matrix:
         print(*(row))
