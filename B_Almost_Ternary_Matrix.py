@@ -11,6 +11,7 @@ for _ in range(int(input())):
         else:
             arr2[j] = 1
             
+            
     matrix = [arr1, arr2, arr2, arr1]                 
     
     final_matrix = ((n // 4) * matrix) + matrix[:(n % 4)]
