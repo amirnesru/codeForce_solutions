@@ -1,8 +1,9 @@
-n=int(input())
-s=0
-arr=[]
+n = int(input())
+s = 0
+max_val = 0
 for i in range(n):
-    exist,enter=map(int,input().split())
-    s=s-exist+enter
-    arr.append(s)
-print(max(arr))    
+    exi,ent=map(int,input().split())
+    s=s-exi+ent
+    max_val = max(max_val,s)
+
+print(max_val)
